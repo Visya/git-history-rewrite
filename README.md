@@ -66,6 +66,8 @@ This if what GitHub team [writes](https://help.github.com/en/articles/removing-s
 
 Another alternative GitHub itself lists as a possible solution is using [BFG tool](https://rtyley.github.io/bfg-repo-cleaner/) for removing sensitive files from repo, which apparently let's you unreference sensitive files easily.
 
+At the same time, it seems like even re-creating your repo from scratch doesn't guarantee you that the secret is safe and sound, so I would still recommend to rotate your secret and sleep safe and sound.
+
 ## Summary
 
 In the end, the easiest thing to avoid all this is really make sure that you don't `.gitignore` sensitive fails by default or get your credentials from ENV, so that it doesn't end up in your remotes under any circumstances.
